@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissenys y dissenyadorxs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pontano+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0%;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            font-family:var(--pontano);
+            text-transform: uppercase;
+            color:white;
+            margin: 20px;
+        }
+        :root{
+            --roig: #bf6b63;
+            --caramel: #d9a384;
+            --blau: #5b9ea6;
+            --dmserif: 'DM Serif Display', serif;
+            --pontano:'Pontano Sans', sans-serif;
+            --negrita: 700;
+        }
+       .container{
+            padding: 0 2em;
+        }
+        body>header{
+            display: grid;
+            padding: 50px 0;
+            text-align: center;
+            height: 100vh;
+            background-color: var(--roig);
+        }
+        header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        hgroup{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        h1{
+            font-size: 1.5em;
+            margin: 0 0 2em 0;
+            font-family: var(--dmserif);
+            font-weight: var(--negrita);
+            color: white;
+        }
+        h2{
+            font-size: 0.75em;
+            font-family:var(--pontano);
+            color:white;
+            width: 50%;
+        }
+        h3{
+            font-family:var(--pontano);
+            color: var(--roig);
+        }
+        nav a{
+            font-size: 0.75em;
+            /*display: flex;
+            padding: 1em 3em;
+            width: 100%;
+            justify-content: space-between;*/
+        }
+        section:first-child .container{
+            /*height: 100%;*/
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--caramel);
+            /*color: white;*/
+        }
+
+        section:last-child .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /*CARD DISSENYS*/
+        .disseny{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 1;
+            min-width: 300px;
+            max-width: 678px;
+            min-height: 350px;
+            padding: 0.5em;
+            margin: 0.3em;
+            box-shadow: var(--roig) 0px 0px 15px;
+            background-color: var(--blau);
+        }
+        .disseny .disseny_img{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            background:var(--roig);
+        }
+        .disseny .disseny_img img{
+            object-fit: cover;
+            object-position: top;
+        }
+        .disseny header{
+            width: 100%;
+            background-color: var(--blau);
+            display: flex;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+        }
+        .disseny h3{
+            font-family: var(--dmserif);
+            font-size: 0.5em;
+            color: white;
+        }
+
+        /*CARD DISSENYADORxS*/
+        .card_dissenyadors{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 300px;
+            box-shadow: var(--roig) 0px 0px 15px;
+            background-color: var(--caramel);
+        }
+        .dissenyadors_img{
+            width: 250px;
+            height: 250px;
+        }
+        .dissenyadors_img img{
+            border-radius: 250px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card_dissenyadors header{
+            margin: 0.75em 0 0 0;
+            text-align: center;
+        }
+        section:last-child{
+            height: 100%;
+            display: flex;
+            background-color: var(--blau);
+            color: white;
+        }
+
+        /*XXSS*/
+        footer{
+            height: 50vh;
+            background-color: var(--caramel);
+            color:var(--roig);
+        }
+        footer .container{
+            display: flex;
+        }
+        footer p{
+            width: 17%;
+        }
+        footer p:last-child{
+            margin-left: 34%;
+        }
+        footer p a{
+            font-family: var(--pontano);
+            text-transform: capitalize;
+            font-size: 0.75em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>Artistes Gràfics</h1>
+                <h2>Col·lecció gràfica dels dissenys i dissenyadors més coneguts</h2>
+            </hgroup>
+            <nav>
+                <a href="#dissenys">Dissenys</a>
+                <a href="#dissenyadorxs">Dissenyadorxs</a>
+                <a href="#xxss">xxss</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+            <section id="#dissenys">
+                <h3>Dissenys</h3>
+                <div class="container">
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/1. Diseño_Milton Glaser.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Disseny. I love NY. Milton Glaser</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/2. Cartell_Paul Rand.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Cartell publicitari. Eye-Bee-M, IBM, THINK. Paul Rand</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/3. Poster_Stefan Sagmeister.JPG" alt="">
+                        </div>
+                        <header>
+                            <h3>Portada. Bridges to Babylon,The Rolling Stones. Stefan Sagmeister</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/4. Cartell_David Carson.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Cartell. Graphic design will save the world right after. David Carson</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/5. Poster _Saul Bass.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Poster. Anatomy of a Murder. Saul Bass</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/6. Identidad_Paula Scher.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Identitat visual per a The Public Theater. Paula Scher</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/7. Poster_Alex Trochut.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Disseny publicitari. Hyper Dunk per a Nike. Alex Trochut</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/8.portada_Jessica Walsh.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Portada 40 citas de citas. Jessica Walsh</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/9. Cartell_Massimo Vignelli.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Identitat visual per al metro de Nueva York. Massimo Vignelli</h3>
+                        </header>
+                    </div>
+
+                    <div class="disseny">
+                        <div class="disseny_img">
+                            <img src="img/dissenys/10. poster_Neville Brody.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Poster Ocean's Eleven. Neville Brody</h3>
+                        </header>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="#dissenyadorxs">
+                <h3>Dissenyadorxs</h3>
+                <div class="container">
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/1. Milton Glaser.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Milton Glaser</h3>
+                            <blockquote>
+                                Ilustrador y diseñador estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/2. Paul Rand.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Paul Rand</h3>
+                            <blockquote>
+                                Diseñador gráfico estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/3. Stefan Sagmeister.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Stefan Sagmeister</h3>
+                            <blockquote>
+                                Diseñador gráfico y director de arte austriaco.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/4. David Carson.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>David Carson</h3>
+                            <blockquote>
+                                Diseñador gráfico, director de arte y surfista estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/5. Saul Bass.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Saul Bass</h3>
+                            <blockquote>
+                                Diseñador gráfico estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/6. Paula Scher.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Paula Scher</h3>
+                            <blockquote>
+                                Diseñadora gráfica y artista estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/7. Alex trochut.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Alex Trochut</h3>
+                            <blockquote>
+                                Diseñador gráfico, ilustrador y tipógrafo español.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/8. JessicaWalsh.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Jessica Walsh</h3>
+                            <blockquote>
+                                Diseñadora, directora de arte, ilustradora y educadora estadounidense.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/9. Massimo Vignelli.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Massimo Vignelli</h3>
+                            <blockquote>
+                                Diseñador italiano.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <img src="img/designers/10. Neville Brody.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Neville Brody</h3>
+                            <blockquote>
+                                Diseñador y director de arte inglés.
+                            </blockquote>
+                        </header>
+                    </div>
+
+                </div>
+            </section>
+    </main>
+
+
+    <footer id="#xxss">
+            <h3>xxss</h3>
+            <div class="container">
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">GitHub</a></p>
+                <p><a href="#">E-mail</a></p>
+            </div>
+    </footer>
+
+</body>
+</html>
